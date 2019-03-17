@@ -1,0 +1,27 @@
+<h2 class="cent" ><%= t 'new task' %></h2>
+
+<div class="center">
+    <form action="/create_new_task" accept-charset="UTF-8" method="get">
+        <label for="tsub"><%= t 'subject' %></label><br/>
+        <select class="form-control form-control-lg" name="tid" id="tid">
+            <%@subjects.each do |s|%>
+                <option value=<%= s.id %>><%= s.name %></option>
+            <%end%>
+        </select>
+    
+        <label for="tname"><%= t 'name' %></label><br/>
+        <input class="form-control" type="text" name="tname" id="tname" /><br/>
+        
+        <label for="deadline"><%= t 'deadline' %></label><br/>
+        <input class="form-control" type="date" name="deadline" id="deadline" /><br/>
+        
+        <label for="max"><%= t 'maximum score' %></label><br/>
+        <input class="form-control" type="text" name="max" id="max" /><br/>
+        
+        <label for="current"><%= t 'current score' %></label><br/>
+        <input class="form-control" type="text" name="current" id="current" /><br/>
+        
+        <input class="btn btn-outline-secondary btn-block" type="submit" value="<%= t 'create' %>">
+    </form> <br/>
+    <a href="/"><%= t 'back to subjects' %></a>
+</div> 

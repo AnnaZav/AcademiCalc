@@ -1,0 +1,124 @@
+.caption{
+font-size:40px;
+font-family: times new roman;
+text-align: center;
+margin: 20px;
+}
+.center{
+padding:0.75%;
+width: 40%;
+margin: auto;
+font-family: times new roman;
+font-size:17px;
+}
+.grey{
+font-size:30px;
+font-family: times new roman;
+color: #200772;
+padding:15px;
+text-align: left;
+font-weight: bold;
+width: 600px;
+}
+.back{
+background: linear-gradient(90deg, white, #cccccc);
+margin-bottom: 100px;
+}
+.cent{
+text-align:center;
+}
+.single-post-card {
+  min-height: 135px;
+  box-shadow: 1px 1px 4px rgba(0,0,0, 0.3);
+  color: black;
+  padding: 10px;
+  text-align: left;
+  transition: border 0.1s, background 0.5s;
+
+  a, a:active, a:hover {
+    color: black;
+  }
+  &:hover {
+    cursor: pointer;
+    background: white;
+    box-shadow: none;
+    border-radius: 1%;
+  }
+}
+#footer  {
+  height: 55px;
+/*   margin-top: 40px; */
+  width: 100%;
+  background: grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+    color: white;
+    text-align: right;
+    padding:0.75%;
+}
+
+html, body {
+  height: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+.col-md-2 {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;  
+}
+
+.max {
+  background: #50c878;  
+}
+
+.cur {
+  background: white;   
+}
+
+.date1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  border-radius: 3%;
+  background: white;   
+}
+
+.date2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+  border-radius: 3%;
+  background: white;   
+}
+
+.div2 {
+  text-align:center;
+  margin-left:67%;
+  display:table;
+  width: 30%;
+}
+
+.main {
+  min-height:100%;
+  position: relative;
+}
+
+#main-container {
+   padding-bottom: 100px;  
+   margin-top: 70px;
+}
+
+.container1 {
+   margin-bottom: 50px;  
+}  

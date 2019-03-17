@@ -1,0 +1,15 @@
+<h2 class="cent" ><%= t 'delete subject' %></h2>
+
+<div class="center">
+    <form action="/del_subject" accept-charset="UTF-8" method="get">
+        <label for="dsub"><%= t 'subject' %></label><br/>
+        <select class="form-control form-control-lg" name="did" id="did">
+            <%@subjects.each do |s|%>
+                <option value=<%= s.id %>><%= s.name %></option>
+            <%end%>
+        </select><br/>
+        
+        <input class="btn btn-outline-secondary btn-block" type="submit" value="<%= t 'delete' %>">
+    </form> <br/>
+    <a href="/"><%= t 'back to subjects' %></a>
+</div>  

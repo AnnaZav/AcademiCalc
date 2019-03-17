@@ -1,0 +1,20 @@
+<h2 class="cent" ><%= t 'delete task' %></h2>
+
+<div class="center">
+    <form action="/del_task" accept-charset="UTF-8" method="get">     
+        <label for="dtask"><%= t 'task' %></label><br/>
+        <select class="form-control form-control-lg" name="dtid" id="dtid">
+            <% @subjects.each do |s| %>
+                <optgroup label=<%= s.name %>>
+                    <% @delete_t = @tasks.select{|i| i.subject_id == s.id} %>
+                    <% @delete_t.each do |t| %>
+                        <option value=<%= t.id %>><%= t.name %></option>
+                    <%end%>
+                </optgroup>
+            <%end%>
+        </select><br/>
+        
+        <input class="btn btn-outline-secondary btn-block" type="submit" value="<%= t 'delete' %>">
+    </form> <br/>
+    <a href="/"><%= t 'back to subjects' %></a>
+</div> 

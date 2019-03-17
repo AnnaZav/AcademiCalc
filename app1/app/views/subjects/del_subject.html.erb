@@ -1,0 +1,7 @@
+<% if @sub_num != Subject.count && !@sub_num.nil? then%>
+     <div><%= t 'success' %></div> 
+<%else%>
+    <div><%= t 'error' %></div> 
+<%end%> 
+<a href="/"><%= t 'back to subjects' %></a>
+

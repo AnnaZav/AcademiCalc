@@ -1,0 +1,52 @@
+.modal-content {
+  h4 {
+    text-align: center;
+  }
+  .progress {
+    margin: 50px 0;
+    height: auto;
+    background: white;
+  }
+}
+
+.modal-content {
+  .loaded-data {
+    h4, .progress {
+      overflow: auto;
+    }
+    padding: 0 10px;
+  }
+}
+
+.back1 {
+  text-align: center;
+  a {
+    padding: 10px;
+    background: grey;
+    color: white;
+    border-radius: 10px;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+} 
+
+.div1 {
+  display:table;
+  width: 70%;
+  margin-left: 15%;
+  font-family: times new roman;
+  font-size:17px;
+}
+
+.col-md-6 {
+  display:table-cell;
+  padding:5px;
+}
+
+.row1 {
+  display:table-row;
+  border-collapse: collapse;
+  border-top: none; 
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AC</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class='back'>
+    <%= render 'nav/nav' %>
+    
+    <div class="main">
+        <div class="container" id="main-container">
+            <% if notice %>
+                <p class="alert alert-success"><%= notice %></p>
+            <% end %>
+            <% if alert %>
+                <p class="alert alert-danger"><%= alert %></p>
+            <% end %>
+            <%= yield %>
+        </div>
+        <div id="footer">
+            <div class="footer-text"><%= t 'footer' %></div>
+        </div>
+    </div>
+  </body>
+</html>

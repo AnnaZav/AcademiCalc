@@ -1,0 +1,19 @@
+<%= render 'subjects/modal' %>
+
+<h1><%= t 'subjects' %></h1><br/>
+<div class="container1">
+    <div id="main-content">
+        <%= render @subjects %>
+    </div><!-- main-content -->
+</div><!-- container1 --> 
+<a class="btn btn-outline-secondary btn-block" href="/statistic" role="button"><%= t 'full' %></a></br>
+
+<div class="row">
+    <div class="col-md-6">
+        <a class="btn btn-outline-secondary btn-block" href="/new_subject" role="button"><%= t 'create new subject' %></a>
+    </div><br/>
+    <div class="col-md-6">
+        <a class="btn btn-outline-danger btn-block" href="/prep_del_sub" role="button"><%= t 'delete subject' %></a>
+    </div>
+ 
+</div>

@@ -1,0 +1,6 @@
+<% if @task_num != Task.count && !@task_num.nil? then%>
+     <div><%= t 'success' %></div> 
+<%else%>
+    <div><%= t 'error' %></div> 
+<%end%> 
+<a href="/"><%= t 'back to subjects' %></a>

@@ -1,0 +1,39 @@
+<h2 class="cent" ><%= t 'new subject' %></h2>
+
+<div class="center">
+    <form action="/create_new_subject" accept-charset="UTF-8" method="get">
+        <label for="name"><%= t 'name' %></label>
+        <input type="text" name="name" id="name" class="form-control" />
+        
+        <fieldset class="form-group">
+        
+            <legend><%= t 'kind' %></legend>
+            
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="kind" value="exam" id="exam-kind" checked>
+                <%= t 'exam' %>
+                </label>
+            </div>
+            
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="kind" value="credit" id="credit-kind">
+                <%= t 'credit' %>
+                </label>
+            </div>
+            
+            <div class="form-check">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="kind" value="difcredit" id="difcredit-kinds">
+                <%= t 'differentiable credit' %>
+                </label>
+            </div>
+
+        </fieldset>
+        
+        <input type="submit" value="<%= t 'create' %>" class="btn btn-outline-secondary btn-block">
+    </form> <br/>
+    <a href="/"><%= t 'back to subjects' %></a>
+</div>
+ 
